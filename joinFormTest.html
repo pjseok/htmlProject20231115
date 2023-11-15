@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        #join_box {
+            border-top:solid 1px #cccccc;
+            border-bottom:solid 1px #cccccc;
+            padding-top:10px;
+            padding-bottom:10px;
+            color:#444444;
+            font-family:'궁서체';
+            font-size:12px;
+
+        }
+        input.phone2{
+            width:80px;
+        }
+        td.col1{
+            text-align:right;
+            padding:5px 5px 5px 5px;
+        }
+
+        input{
+            margin-top:5px;
+            padding:3px 3px 3px 3px;
+            border:solid 1px pink;
+            border-radius:5px;
+        }
+
+        textarea{
+            border:solid 1px pink;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>가입 양식</h2>
+    <form action="">
+        <table id="join_box">
+            <tr>
+                <td class="col1">아이디 : </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="col1">비밀번호 : </td>
+                <td><input type="passowrd"></td>
+            </tr>
+            <tr>
+                <td class="col1">비밀번호 확인 :</td>
+                <td><input type="passowrd"></td>
+            </tr>
+            <tr>
+                <td class="col1">이름 : </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="col1">성별 : </td>
+                <td>
+                    <input type="radio" name="gender" checked> 여성
+                    <input type="radio" name="gender"> 남성
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">휴대전화 : </td>
+                <td>
+                    <select>
+                        <option value="">010</option>
+                        <option value="">016</option>
+                        <option value="">018</option>
+                        <option value="">019</option>
+                    </select>
+                    <input type="text" class="phone2"> - <input type="text" class="phone2">
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">이메일 : </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">선택</option>
+                        <option value="">naver.com</option>
+                        <option value="">daum.net</option>
+                        <option value="">gmail.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">취미 : </td>
+                <td>
+                    <input type="checkbox"> 음악감상
+                    <input type="checkbox"> 독서
+                    <input type="checkbox"> 등산
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">자기소개 : </td>
+                <td>
+                    <textarea cols="50" rows="6"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">파일첨부 : </td>
+                <td>
+                    <input type="file"> * 2mb까지 가능
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
